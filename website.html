@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annixsolutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roc+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h2>Annixsolutions<h2></div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="introduction" class="section green-bg">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h1>Streamlined web solutions for growing businesses</h1>
+                    <p>Our mission is to empower businesses through affordable and customised web solutions. We handle everything from design and development to ongoing support, ensuring a seamless experience for our clients. Let us help you establish a powerful online presence effortlessly, so you can focus on what you do best—growing your business</p>
+                </div>
+                <div class="intro-image">
+                    <img src="annix_poster.jpg" alt="Intro Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section white-bg">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-item">Web development</div>
+                <div class="service-item">Web maintenance</div>
+                <div class="service-item">Website hosting</div>
+                <div class="service-item">UI/UX design</div>
+                <div class="service-item">Mobile app development</div>
+                <div class="service-item">Excel automation</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section black-bg">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2>About Us</h2>
+                </div>
+                <div class="about-text">
+                    <p>We are a team of passionate and creative professionals who love what they do. We believe that a great website can make all the difference for your business, and we're here to make that happen for you. Whether you need a new website, a fresh redesign, or ongoing support, we've got you covered. Our mission is simple: to help you achieve your goals with affordable, high-quality web solutions. 
+
+                        Get in touch with us today and let's work together to bring your vision to life and help your business thrive online. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section white-bg">
+        <div class="container contact-content">
+            <h2>Contact Us</h2>
+            <p>Email: info@annixsolutions.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: 'Big Caslon', Serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color:#8cd8be;
+        color: black;
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .section {
+        padding: 60px 20px;
+        position: relative;
+    }
+    
+    .green-bg {
+        background-color: #8cd8be;
+        color: black;
+    }
+    
+    .white-bg {
+        background-color: white;
+        color: black;
+    }
+    
+    .black-bg {
+        background-color: black;
+        color: #8cd8be;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .intro-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .intro-text, .about-text {
+        flex: 1;
+    }
+    
+    .intro-image, .about-image {
+        flex: 1;
+    }
+    
+    .intro-image img, .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .about-header {
+        flex: 1;
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .service-item {
+        flex: 1 1 calc(33.333% - 40px);
+        margin: 20px;
+        padding: 20px;
+        background: #f4f4f4;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Contact Section Specific Styles */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+    
+    /* Font size customization */
+    h1 {
+        font-size: 5.0em; /* Adjust this value for the desired font size */
+    }
+    
+    h2 {
+        font-size: 2em; /* Adjust this value for the desired font size */
+    }
+    
+    p {
+        font-size: 1.5em; /* Adjust this value for the desired font size */
+    }
+    
+    a {
+        font-size: 1.2em; /* Adjust this value for the desired font size */
+    }
+
+
+
+    
+    
+    
+</style>
